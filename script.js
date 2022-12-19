@@ -18,8 +18,9 @@ console.log(names);
 
 let arr = [1, 2, false, 'hello', 24, 'world', undefined, null, 'error', 22]
 
-if(arr.includes(item => item.typeOf('number'))){
+if(arr.filter(item => typeof item === 'number')){
   alert('Good')
 }
 
 console.log(arr)
+
